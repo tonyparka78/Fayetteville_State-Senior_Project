@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="../../public/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../public/assets/css/responsive.css">
+	
+	<link rel="stylesheet" href="../../public/assets/css/bootstrap.min.css">
+	<script src="../../public/assets/js/jquery.min.js"></script>
+	<script src="../../public/assets/js/popper.min.js"></script>
+	<script src="../../public/assets/js/bootstrap.min.js"></script>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+</head>
+<body style="background-image: url(images/b3.jpg) !important; background-size: cover !important;">
+	<nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="../../public/assets/images/logo.png" class="logo img-fluid">
+			</a>
+            <!--
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button> -->
+
+			<div class="collapse navbar-collapse" id="navbarsExample05">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/faq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contact">Contact</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown user-link">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<!-- <img src="images/user.png" class="img-fluid user-img"> -->
+							<i class="fas fa-user"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown05">
+							<a class="dropdown-item" href="/workout">Workout Log</a>
+							<a class="dropdown-item" href="/account">Account</a>
+							<a class="dropdown-item" href="/login/logout">Logout</a>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<div class="margin-top"></div>
+
+	<!-- <div class="banner2">
+		<img src="images/b3.jpg" class="img-fluid">
+	</div> -->
+
+	<div class="Workout-section wrapper exercise">
+		<div class="container">
+			<div class="row Workout-box mt-0">
+				<div class="col-lg-3 col-md-4 sidebar">
+					<div class="sidebar-inner">
+						<ul class="menu">
+							<li><a href="/workout/exercise" class="active"><i class="fas fa-running"></i> Exercise</a></li>
+							<li><a href="/workout/category"><i class="fas fa-sliders-h"></i> Category</a></li>
+							<li><a href="/workout/routine"><i class="fas fa-calendar-alt"></i> Routine</a></li>
+							<li><a href="/workout/tools"><i class="fas fa-wrench"></i> Tools</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="col-lg-9 col-md-8 content">
+					<h2>Exercise</h2>
+					<div class="ex-inner">
+							<% if(data) { %>
+								<% data.forEach(function(exercise) { %>
+						<div class="edit-user">
+							<p><%= exercise.name %></p>
+							<div class="icon">
+								<div class="btn-group">
+									<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="sr-only">Toggle Dropdown</span>
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" data-toggle="modal" data-target="#edit-exercise" href="#!">Rename exercise</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="/workout/exercise/delete/<%= exercise.id %>">Delete exercise</a>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="icon">
+								<a href=""><i class="fas fa-pencil-alt"></i></a>
+								<a href=""><i class="fas fa-trash-alt"></i></a>
+							</div> -->
+											<!-- Modal Edit -->
+				<div class="modal fade mymodal" id="edit-exercise" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						  <div class="modal-content">
+							  <form class="form form1" action="/workout/exercise/edit/<%= exercise.id%>" method="post">
+								<div class="modal-header">
+								  <h5 class="modal-title" id="exampleModal3Label">Edit the Exercise</h5>
+								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								  </button>
+								</div>
+								<div class="modal-body">
+								  <p>Please enter a name and select an exercise type</p>
+									  <div class="form-group">
+										  <input type="text" id="name" name="name" class="form-control" value="<%= exercise.name %>" required="">
+										</div>
+										<div class="form-group">
+										  <select name="type" id="type" class="form-control" required="">
+											  <option selected="" disabled="">Select type</option>
+											  <option>Strength</option>
+											  <option>Cardio</option>
+										  </select>
+										</div>
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-secondary btn1" data-dismiss="modal">Cancel</button>
+								  <input type="submit" class="btn btn-primary btn1" value="submit"/>
+								</div>
+							  </form>
+						  </div>
+						</div>
+					  </div>
+						</div>
+						<% }) } %>
+					</div>
+				</div>
+			</div>
+
+			<div class="container add-btn">
+				<a href="#" class="icon" data-toggle="modal" data-target="#add-exercise"><i class="fas fa-plus"></i></a>
+			</div>
+
+		</div>
+		<!-- Modal -->
+		<div class="modal fade mymodal" id="add-exercise" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		        <form class="form form1" action="/workout/exercise/add" method="post">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModal3Label">Add a new Exercise</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Please enter a name and select an exercise type</p>
+			        	<div class="form-group">
+						    <input type="text" id="name" name="name" class="form-control" placeholder="Exercise Name" required="">
+					  	</div>
+					  	<div class="form-group">
+						    <select name="type" id="type" class="form-control" required="">
+						    	<option selected="" disabled="">Select type</option>
+						    	<option>Strength</option>
+						    	<option>Cardio</option>
+						    </select>
+					  	</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary btn1" data-dismiss="modal">Cancel</button>
+			        <input type="submit" class="btn btn-primary btn1" value="submit"/>
+			      </div>
+		        </form>
+		    </div>
+		  </div>
+		</div>
+
+
+	</div>
+
+
+	<div class="footer">
+		<div class="container">
+			<p class="copy">© 2019 Workout. Designed & Developed By Anthony Parker Damion Fikes Darius Fields</p>
+		</div>
+	</div>
+</body>
+</html>

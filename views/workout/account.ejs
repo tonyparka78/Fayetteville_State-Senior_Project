@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="../../public/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../public/assets/css/responsive.css">
+	
+	<link rel="stylesheet" href="../../public/assets/css/bootstrap.min.css">
+	<script src="../../public/assets/js/jquery.min.js"></script>
+	<script src="../../public/assets/js/popper.min.js"></script>
+	<script src="../../public/assets/js/bootstrap.min.js"></script>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+</head>
+<body style="background-image: url(images/b6.jpg) !important; background-size: cover !important;">
+	<nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/">
+				<img src="../../public/assets/images/logo.png" class="logo img-fluid">
+			</a>
+				<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button> -->
+
+			<div class="collapse navbar-collapse" id="navbarsExample05">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/faq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/contact">Contact</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown user-link">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<!-- <img src="images/user.png" class="img-fluid user-img"> -->
+							<i class="fas fa-user"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown05">
+							<a class="dropdown-item" href="/workout">Workout Log</a>
+							<a class="dropdown-item" href="/account">Account</a>
+							<a class="dropdown-item" href="/login/logout">Logout</a>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+    <div class="margin-top"></div>
+	
+
+	<!-- <div class="banner2">
+		<img src="images/b6.jpg" class="img-fluid">
+	</div> -->
+
+	<div class="acount-section wrapper">
+		<div class="container">
+			<div class="row account-box justify-content-center">
+				<div class="col-lg-8 col-md-10 col-sm-12">
+					<h2 class="mb-4">Account</h2>
+					<div class="row box">
+						<div class="col-sm-3 left">
+							<p>Username :</p>
+						</div>
+						<div class="col-sm-9 right">
+							<div class="edit-user2">
+								<p>Anthony Parker</p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="row box">
+						<div class="col-sm-3 left">
+							<p>Email :</p>
+						</div>
+						<div class="col-sm-9 right">
+							<div class="edit-user2">
+								<p>tonyparka7838@gmail.com <a href="#" class="icon" data-toggle="modal" data-target="#edit-email"><i class="fas fa-user-edit"></i></a></p>
+								
+							</div>
+						</div>
+					</div>
+					<div class="row box">
+						<div class="col-sm-3 left">
+							<p>Password :</p>
+						</div>
+						<div class="col-sm-9 right">
+							<div class="edit-user2">
+								<p>********** <a href="#" class="icon" class="icon" data-toggle="modal" data-target="#edit-password"><i class="fas fa-user-edit"></i></a></p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- Modal -->
+		<div class="modal fade mymodal" id="edit-email" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		        <form class="form form1">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModal3Label">Update Email Address</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Please  enter your email address</p>
+			        	<div class="form-group">
+						    <input type="email" id="" class="form-control" placeholder="Email" required="">
+					  	</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary btn1" data-dismiss="modal">Cancel</button>
+			        <button type="button" class="btn btn-primary btn1">Submit</button>
+			      </div>
+		        </form>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade mymodal" id="edit-password" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+	    		<form class="form form1">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModal3Label">Change Your Password</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	<div class="form-group">
+						    <input type="password" id="" class="form-control" placeholder="Old Password" required="">
+					  	</div>
+					  	<div class="form-group">
+						    <input type="password" id="" class="form-control" placeholder="New Password" required="">
+					  	</div>
+					  	<div class="form-group">
+						    <input type="password" id="" class="form-control" placeholder="Confirm Password" required="">
+					  	</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary btn1" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary btn1">Submit</button>
+			      </div>
+			  	</form>	
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		<div class="container">
+			<p class="copy">© 2019 Workout. Designed & Developed By Anthony Parker Damion Fikes Darius Fields</p>
+		</div>
+	</div>
+</body>
+</html>

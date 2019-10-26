@@ -1,0 +1,83 @@
+
+
+@media screen and (min-width: 576px){
+	.acount-section .box .left p{
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.tools .content,
+	.exercise .content{
+		padding-left: 30px;
+		padding-right: 30px;		
+	}
+	.Workout-section .sidebar {
+	    min-height: 55vh;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.banner-home .text-box{
+		padding: 0 50px;
+	}
+}
+
+/*===================================*/
+
+@media screen and (max-width: 992px){
+	.banner2 img {
+	    height: 280px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	body h1 {
+	    font-size: 2.2rem;
+    }
+	.banner-home {
+	    padding: 150px 0 60px 0;
+	}
+	nav.navbar .navbar-collapse{
+		position: absolute;
+	    width: 100%;
+	    left: 0px;
+	    padding: 0px 20px;
+	    top: 60px !important;
+		background: #060d20;
+		z-index: 99;	
+	}
+	.banner2 img {
+	    height: 240px;
+	}
+	.Workout-section .sidebar {
+		/*margin-bottom: 30px;*/
+	}
+}
+
+@media screen and (max-width: 575px){
+	body h1 {
+	    font-size: 2rem;
+    }
+	.banner2 img {
+	    height: 200px;
+	}
+	.banner-home {
+	    padding: 120px 0 40px 0;
+	}
+	.login-section .login-box{
+	    padding: 30px 20px;
+	}
+	.contact-section .contact-box .form1{
+	    background: rgba(9, 16, 42, .8);
+	    padding: 30px 20px;
+	}
+	.acount-section{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	
+}

@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+
+body{
+  font-family: 'Lato', sans-serif !important;
+  background: #000 !important;
+  background-attachment: fixed !important;
+}
+
+body h1{
+	color: #fff;
+	font-weight: 600;
+}
+body h2{
+	text-align: center;
+	margin-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Added text/Body Building
+*/
+body h6{
+    color: #fff
+}
+
+
+body p{
+	color: #ccc;
+	margin-bottom: 10px;
+}
+body p a{
+	color: #fff35b;
+	text-decoration: none;
+}
+body p a:hover{
+	color: #ccc;
+	text-decoration: none;
+}
+
+body a:hover,
+body a:focus,
+body a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.btn.btn1{
+  background: #fff35b;
+  color: #000;
+  /*border: 2px solid #fff35b;*/
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  padding: 12px 8px;
+  font-size: 1em;
+  letter-spacing: .4px;
+  box-shadow: 0 10px 25px -12px rgba(0, 0, 0, 0.25);
+  outline: none;
+  margin-top: 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all .6s ease;
+}
+.btn.btn1:hover{
+  background: #09102a;
+  color: #fff;
+  box-shadow: 0 10px 25px -12px rgba(0, 0, 0, 0.6);
+}
+
+.btn.btn2{
+  background: #fff35b;
+  color: #000;
+  border: 2px solid #fff35b;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  padding: 12px 8px;
+  font-size: 1em;
+  letter-spacing: .4px;
+  box-shadow: 0 10px 25px -12px rgba(0, 0, 0, 0.25);
+  outline: none;
+  margin-top: 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all .6s ease;
+}
+.btn.btn2:hover{
+  background: transparent;
+  color: #fff35b;
+  box-shadow: 0 10px 25px -12px rgba(0, 0, 0, 0.6);
+}
+
+
+.wrapper{
+	padding: 60px 0;
+}
+
+
+.margin-top{
+	margin-top: 60px;
+}
+
+.logo{
+	width: 120px;
+}
+
+
+nav.navbar{
+	background: #09102a;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+}
+
+nav.navbar .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+    font-weight: 500;
+}
+nav.navbar .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+nav.navbar .navbar-nav .active>.nav-link{
+	color: #fff35b;
+}
+
+/*user-link*/
+nav.navbar .user-link{
+
+}
+nav.navbar .user-link .user-img{
+	width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+nav.navbar .user-link .dropdown-menu {
+    right: 0;
+    left: auto;
+    background: #09102a;
+}
+nav.navbar .user-link .dropdown-menu .dropdown-item {
+    color: #fff;
+    font-weight: 500;
+}
+nav.navbar .user-link .dropdown-menu .dropdown-item:hover {
+	background: transparent;
+	color: #fff35b;
+}
+nav.navbar .user-link .nav-link i {
+    font-size: 1.5em;
+}
+nav.navbar .user-link .dropdown-toggle::after{
+	/*display: none;*/
+}
+
+nav.navbar .navbar-toggler{
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+    background-image: url('../images/toggle-icon.svg');
+}
+
+
+/*banner-home*/
+.banner-home{
+	background: url(../images/b7.jpg);
+	background-size: cover;
+	height: 100%;
+	min-height: 100vh;
+	padding: 180px 0 60px 0;
+}
+.banner-home h1{
+	color: #fff35b;
+}
+.banner-home p {
+	color: #fff;
+}
+.banner-home .text-box{
+	width: 100%;
+	max-width: 600px;
+}
+.banner-home .btn-box{
+	width: 100%;
+    max-width: 768px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.banner-home .btn-box img{
+    width: 70px;
+    margin-bottom: 15px;
+}
+.banner-home .btn-box .btn1{
+	background: rgba(9, 16, 42, 0.55);
+	color: #fff;
+    padding: 40px 15px;
+    max-width: 200px;
+    font-size: 1.1em;
+}
+.banner-home .btn-box .btn1:hover{
+	background: #09102a;
+    color: #fff35b;
+}
+
+/*banner2*/
+.banner2{
+}
+.banner2 img{
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+}
+
+/*login-section*/
+.login-body {
+    background-image: url(../images/b6.jpg) !important;
+    background-size: cover !important;
+}
+
+.login-section .login-box{
+    width: 100%;
+    max-width: 540px;
+    padding: 40px 60px;
+    margin: auto;
+    /*margin-top: 25px;*/
+    background: rgba(9, 16, 42, .8);
+}
+.login-section .login-box h2{
+    margin-bottom: 25px;
+}
+
+
+/*form1*/
+form.form1 .form-control{
+	height: 45px;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+    border-color: #868686;
+
+}
+form.form1 .form-control:focus{
+	border-color: #fff35b;
+}
+form.form1 .form-control::placeholder{
+	color:#888;
+}
+form.form1 textarea.form-control{
+	height: 120px;
+}
+
+form.form1 .info1{
+	color: #888;
+    font-size: .82em;
+    margin-top: 5px;
+}
+form.form1 .info1 a{
+	color: #888;
+}
+form.form1 .info1 a:hover{
+	color: #fff35b;
+}
+form.form1 select.form-control option{
+    background: #09102a;
+}
+form.form1 label{
+    color: #fff;
+    font-size: 1.1em;
+}
+form.form1 .input-info{
+    position: relative;
+}
+form.form1 .input-info .inf {
+    color: #fff;
+    font-size: 1em;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 80px;
+    height: 43px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-left: 1px solid #868686;
+    padding-top: 7px;
+}
+form.form1 .input-info .form-control {
+    padding-right: 85px;
+}
+
+
+/*ct-section*/
+.contact-section .contact-box{
+    /*margin-top: 40px;*/
+}
+.contact-section .contact-box .form1{
+    background: rgba(9, 16, 42, .8);
+    padding: 40px 60px;
+}
+
+
+/*acount-section*/
+.acount-section {
+    min-height: 84vh;
+}
+.acount-section .account-box{
+	margin-top: 40px;
+    background: rgba(9, 16, 42, .8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.acount-section .box{
+	margin-bottom: 10px;
+}
+.acount-section .box .left p{
+	font-weight: 600;
+	color: #fff;
+	font-size: 1.08em;
+}
+.acount-section .edit-user2{
+	position: relative;
+    padding-right: 25px;
+}
+
+.acount-section .edit-user2 .icon{
+	position: absolute;
+    right: 0;
+    color: #888;
+}
+.acount-section .edit-user2 .icon:hover{
+	color: #fff;
+}
+.acount-section .edit-user2 .icon i {
+    width: 16px;
+}
+
+/*mymodal*/
+.mymodal{
+	
+}
+.mymodal .btn-primary.btn1{
+	border: none;
+    margin: 0;
+    width: auto;
+    padding: 10px 30px;
+}
+.mymodal .btn-primary.btn1:hover{
+	background: #000;
+}
+.mymodal .btn-secondary.btn1{
+	border: none;
+    margin: 0;
+    margin-right: 10px;
+    width: auto;
+    padding: 10px 30px;
+    background: #000;
+    color: #fff;
+}
+.mymodal .modal-header .close{
+	outline: none;
+    font-size: 1.8em;
+    color: #09102a;
+    opacity: 1;	
+}
+.mymodal .modal-title {
+    font-weight: 600;
+    color: #fff;
+}
+.mymodal .modal-content{
+	background: #09102a;
+}
+.mymodal .modal-header,
+.mymodal .modal-footer{
+	border-color: #444;
+}
+
+.modal-backdrop.show {
+    opacity: .8 !important;
+}
+
+
+/*Workout-section*/
+.Workout-section {
+	position: relative;
+    min-height: 84vh;
+}
+.Workout-section .Workout-box{
+	margin-top: 40px;
+}
+
+.Workout-section .sidebar{
+	background: rgba(255, 243, 91, .85);
+}
+.Workout-section .sidebar .sidebar-inner{
+	height: 100%;
+	padding: 15px 0;
+	/*box-shadow: 0px 4px 18px -10px rgba(0, 0, 0, .35);*/
+}
+.Workout-section .sidebar .menu{
+	list-style: none;
+	padding-left: 0;
+}
+
+.Workout-section .sidebar .menu a{
+    display: block;
+    padding: 10px 10px;
+    /* margin-bottom: 4px; */
+    font-size: 1.04em;
+    transition: all .4s ease;
+    border-bottom: 1px solid #b1a92c;
+}
+.Workout-section .sidebar .menu li:last-child a{
+    border: none;
+}
+.Workout-section .sidebar .menu a:hover,
+.Workout-section .sidebar .menu a.active{
+    color: #fff;
+    background: #09102a;
+}
+.Workout-section .sidebar .menu i{
+    width: 24px;
+}
+
+
+.Workout-section .ex-inner{
+	margin-top: 30px;
+}
+.Workout-section .edit-user p{
+	font-weight: 600;
+	font-size: 1.08em;
+	margin-bottom: 0;
+}
+.Workout-section .edit-user {
+    position: relative;
+    padding: 12px 10px;
+    padding-right: 30px;
+    border-bottom: 1px solid #666;
+}
+.Workout-section .edit-user .icon {
+    position: absolute;
+    right: 2px;
+    top: 14px;
+    font-size: 1em;
+    padding: 0;
+    height: auto;
+    text-align: right;
+}
+.Workout-section .edit-user .icon a {
+    margin: 0;
+    color: #555;
+}
+.Workout-section .edit-user .icon a:hover {
+	color: #fff;
+}
+.Workout-section .edit-user button.dropdown-toggle {
+    /*position: absolute;
+    right: 2px;
+    top: 0px;*/
+    background: transparent !important;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 1.6em;
+    padding: 0;
+    height: auto;
+    width: 22px;
+    line-height: 1;
+}
+
+.Workout-section .edit-user .dropdown-menu {
+    box-shadow: 0px 1px 12px -2px rgba(0, 0, 0, .1);
+    border-color: #ebebeb;
+    right: 0;
+    left: auto;
+}
+.Workout-section .edit-user .dropdown-menu a:hover{
+	color: #09102a;
+	background: transparent;
+}
+
+.Workout-section .add-btn{
+	position: relative;
+	height: 50px;
+}
+.Workout-section .add-btn .icon {
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+    width: 40px;
+    height: 40px;
+	background: #fff35b;
+	display: block;
+	color: #000;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    padding-top: 5px;
+}
+.workout .content,
+.tools .content,
+.exercise .content{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: rgba(9, 16, 42, .85);
+}
+
+
+
+/*faq section*/
+.faq-section .accordion1{
+	margin-top: 40px;
+}
+
+.faq-section .card {
+    margin-bottom: 15px;
+    background: transparent;
+}
+.faq-section .card-header {
+    padding: 0;
+    position: relative;
+}
+.faq-section .card-header a {
+    padding: 15px;
+    display: block;
+}
+.faq-section .card-header h5{
+    font-size: 1.02em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.faq-section .card-header a {
+    padding: 15px 15px;
+    display: block;
+    background: #fff35b;
+    color: #000;
+    padding-right: 40px;
+    transition: all .4s ease;
+}
+.faq-section .card-header a.collapsed {
+    background: #09102a;
+    color: #fff;
+}
+
+
+.faq-section .card .card-header .collapsed i:before{
+  	content: "\f107";
+
+}
+.faq-section .card .card-header i{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+
+
+/*tools*/
+.tools .tab-menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tools .tab-menu .nav .nav-link {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+}
+.tools .tab-menu .nav .nav-link:hover {
+    color: #fff35b;
+}
+.tools .tab-menu .nav .nav-link.active {
+    background: transparent;
+    color: #fff35b;
+    border-color: #fff35b;
+}
+
+.tools .tab-content form.form1 .form-control{
+    margin-bottom: 10px;
+}
+
+
+.tools .history-box {
+    border: 1px solid #666;
+    background: rgba(0, 0, 0, .4);
+    margin-bottom: 20px;
+}
+
+.tools .history-box .his1 p{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.tools .history-box .his1 {
+    position: relative;
+    padding: 12px 10px;
+    padding-right: 30px;
+    border-bottom: 1px solid #666;
+}
+.tools .history-box .his1 .icon {
+    position: absolute;
+    right: 2px;
+    top: 12px;
+    font-size: 1em;
+    padding: 0;
+    height: auto;
+    text-align: right;
+}
+.tools .history-box .his1 .icon a {
+    margin: 0;
+    color: #555;
+}
+.tools .history-box .his1 .icon a:hover {
+    color: #fff;
+}
+.tools .history-box .his1 button.dropdown-toggle {
+    background: transparent !important;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 1.6em;
+    padding: 0;
+    height: auto;
+    width: 22px;
+    line-height: 1;
+}
+
+.tools .history-box .his1 .dropdown-menu {
+    box-shadow: 0px 1px 12px -2px rgba(0, 0, 0, .1);
+    border-color: #ebebeb;
+    right: 0;
+    left: auto;
+}
+.tools .history-box .his1 .dropdown-menu a:hover{
+    color: #09102a;
+    background: transparent;
+}
+.tools .history-box .his2 table p{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+/*footer*/
+.footer{
+	background: #09102a;
+	padding: 15px 0;
+}
+.footer .copy{
+	margin-bottom: 0;
+	text-align: center;
+	color: #ccc;
+	font-size: .9em;
+}
+.footer .copy a:hover{
+	color: #ccc;
+}
