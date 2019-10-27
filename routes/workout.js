@@ -18,7 +18,7 @@ app.get('/', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
@@ -43,7 +43,7 @@ app.get('/exercise', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
@@ -65,10 +65,10 @@ app.post('/exercise/add', function(req, res, next){
                 res.redirect('/workout/exercise')
             }
         })
-    })    
+    })
 }
 else{
-    req.flash('error', 'you dont Have persmission') 
+    req.flash('error', 'you dont Have persmission')
     res.redirect('/')
 }
 })
@@ -104,7 +104,7 @@ app.post('/exercise/edit/(:id)', function(req, res, next){
                 })
             }
         })
-    })    
+    })
 })
 // DELETE AN EXERCICE
 app.get('/exercise/delete/(:id)', function(req, res, next){
@@ -118,7 +118,7 @@ app.get('/exercise/delete/(:id)', function(req, res, next){
                     data: ''
                 })
             } else {
-                req.flash('delet', 'exercise Deleted!')
+                req.flash('delete', 'exercise Deleted!')
                 pool.query("SELECT * FROM exercise where username = '" + req.session.username +"'", function(err, rows, fields){
                     if(err){
                         req.flash('error', err)
@@ -158,7 +158,7 @@ app.get('/category', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
@@ -179,10 +179,10 @@ app.post('/category/add', function(req, res, next){
                 res.redirect('/workout/category')
             }
         })
-    })    
+    })
 }
 else{
-    req.flash('error', 'you dont Have persmission') 
+    req.flash('error', 'you dont Have persmission')
     res.redirect('/')
 }
 })
@@ -217,7 +217,7 @@ app.post('/category/edit/(:id)', function(req, res, next){
                 })
             }
         })
-    })    
+    })
 })
 // DELETE A Category
 app.get('/category/delete/(:id)', function(req, res, next){
@@ -271,7 +271,7 @@ app.get('/routine', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
@@ -292,10 +292,10 @@ app.post('/routine/add', function(req, res, next){
                 res.redirect('/workout/routine')
             }
         })
-    })    
+    })
 }
 else{
-    req.flash('error', 'you dont Have persmission') 
+    req.flash('error', 'you dont Have persmission')
     res.redirect('/')
 }
 })
@@ -330,7 +330,7 @@ app.post('/routine/edit/(:id)', function(req, res, next){
                 })
             }
         })
-    })    
+    })
 })
 // DELETE AN Routine
 app.get('/routine/delete/(:id)', function(req, res, next){
@@ -372,7 +372,7 @@ app.get('/tools', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
@@ -384,11 +384,11 @@ app.get('/weight', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
-// Weight add to DB 
+// Weight add to DB
 app.post('/weight/add', function(req, res, next){
     if(req.session.username){
         var weight = {
@@ -423,10 +423,10 @@ app.post('/weight/add', function(req, res, next){
                     })
                 }
             })
-        })    
+        })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
@@ -494,7 +494,7 @@ app.get('/history', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
@@ -506,7 +506,7 @@ app.get('/graph', function(req, res, next){
         })
     }
     else{
-        req.flash('error', 'you dont Have persmission') 
+        req.flash('error', 'you dont Have persmission')
         res.redirect('/')
     }
 })
