@@ -11,12 +11,12 @@ NodeJS CRUD app with MySQL, Express, and EJS.
 
 #### 1. Download Mysql workbench from : https://www.mysql.com/fr/products/workbench/
 
-#### 2. int the menu : Database --> Connect To Database ( use your username and passwor Mysql)
+#### 2. int the menu : Database --> Connect To Database ( use username and password Mysql)
 
-#### 3. in the menu click on icon (Creat a new Shema..) choose a name and click "Apply"
+#### 3. in the menu click on icon (Create a new Shema..) choose a name and click "Apply"
 
 #### 4. in menu : File --> RUN SQL SCRIPT and choose the file app.sql 
-        - new window display in --> Defau Schema Name choose your shema Created
+        - new window display in --> Default Schema Name choose your shema Created
 
 #### 5. Creat a new user for database : 
         a-  Menu : Server --> Users And Priveleges 
