@@ -138,8 +138,6 @@ app.use('/body-building',body)
 app.use('/cardio',cardio)
 app.use('/account',account)
 
-
-/* Binds and listens for connections on the specified host and port. */
 app.listen(3000, function(){
-    console.log("running on http://localhost:3000")
+    console.log("Server port: 3000")
 })
