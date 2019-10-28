@@ -1,12 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.9.1
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1
--- Généré le :  jeu. 24 oct. 2019 à 00:18
--- Version du serveur :  10.4.8-MariaDB
--- Version de PHP :  7.3.10
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -19,13 +10,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `app`
+-- Database :  `app`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `category`
+-- Structure of the table `category`
 --
 
 CREATE TABLE `category` (
@@ -37,7 +28,7 @@ CREATE TABLE `category` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `exercise`
+-- Structure of the table `exercise`
 --
 
 CREATE TABLE `exercise` (
@@ -50,7 +41,7 @@ CREATE TABLE `exercise` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `routine`
+-- Structure of the table `routine`
 --
 
 CREATE TABLE `routine` (
@@ -62,7 +53,7 @@ CREATE TABLE `routine` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `users`
+-- Structure of the table `users`
 --
 
 CREATE TABLE `users` (
@@ -75,7 +66,7 @@ CREATE TABLE `users` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `weight`
+-- Structure of the table `weight`
 --
 
 CREATE TABLE `weight` (
@@ -88,35 +79,35 @@ CREATE TABLE `weight` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Index pour les tables déchargées
+-- Index for unloaded tables
 --
 
 --
--- Index pour la table `category`
+-- Index for the table `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `exercise`
+-- Index for the table `exercise`
 --
 ALTER TABLE `exercise`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `routine`
+-- Index for the table `routine`
 --
 ALTER TABLE `routine`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `users`
+-- Index for the table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `weight`
+-- Index for the table `weight`
 --
 ALTER TABLE `weight`
   ADD PRIMARY KEY (`id`);
