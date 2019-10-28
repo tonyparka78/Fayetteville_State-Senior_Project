@@ -69,13 +69,16 @@
 			<div class="row account-box justify-content-center">
 				<div class="col-lg-8 col-md-10 col-sm-12">
 					<h2 class="mb-4">Account</h2>
+					<% if(messages.error) { %>
+						<p style="color:red">The old password not correct</p>
+					<% } %>
 					<div class="row box">
 						<div class="col-sm-3 left">
 							<p>Username :</p>
 						</div>
 						<div class="col-sm-9 right">
 							<div class="edit-user2">
-								<p>Anthony Parker</p>
+								<p><%= data.username %></p>
 								
 							</div>
 						</div>
@@ -86,7 +89,7 @@
 						</div>
 						<div class="col-sm-9 right">
 							<div class="edit-user2">
-								<p>tonyparka7838@gmail.com <a href="#" class="icon" data-toggle="modal" data-target="#edit-email"><i class="fas fa-user-edit"></i></a></p>
+								<p><%= data.email %><a href="#" class="icon" data-toggle="modal" data-target="#edit-email"><i class="fas fa-user-edit"></i></a></p>
 								
 							</div>
 						</div>
@@ -113,7 +116,7 @@
 		<div class="modal fade mymodal" id="edit-email" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-		        <form class="form form1">
+		        <form class="form form1" action="/account/email" method="post">
 			      <div class="modal-header">
 			        <h5 class="modal-title" id="exampleModal3Label">Update Email Address</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -123,12 +126,12 @@
 			      <div class="modal-body">
 			        <p>Please  enter your email address</p>
 			        	<div class="form-group">
-						    <input type="email" id="" class="form-control" placeholder="Email" required="">
+						    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="">
 					  	</div>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary btn1" data-dismiss="modal">Cancel</button>
-			        <button type="button" class="btn btn-primary btn1">Submit</button>
+			        <input type="submit" class="btn btn-primary btn1" value="submit"/>
 			      </div>
 		        </form>
 		    </div>
@@ -138,7 +141,7 @@
 		<div class="modal fade mymodal" id="edit-password" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-	    		<form class="form form1">
+	    		<form class="form form1" action="/account/password" method="post">
 			      <div class="modal-header">
 			        <h5 class="modal-title" id="exampleModal3Label">Change Your Password</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -147,10 +150,10 @@
 			      </div>
 			      <div class="modal-body">
 			        	<div class="form-group">
-						    <input type="password" id="" class="form-control" placeholder="Old Password" required="">
+						    <input type="password" name="oldpassword" id="" class="form-control" placeholder="Old Password" required="">
 					  	</div>
 					  	<div class="form-group">
-						    <input type="password" id="" class="form-control" placeholder="New Password" required="">
+						    <input type="password" name="password" id="" class="form-control" placeholder="New Password" required="">
 					  	</div>
 					  	<div class="form-group">
 						    <input type="password" id="" class="form-control" placeholder="Confirm Password" required="">
@@ -158,7 +161,7 @@
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-secondary btn1" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary btn1">Submit</button>
+			        <input type="submit" class="btn btn-primary btn1" value="Submit"/>
 			      </div>
 			  	</form>	
 		    </div>

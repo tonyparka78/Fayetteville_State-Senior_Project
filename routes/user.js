@@ -44,7 +44,11 @@ app.post('/', function(req, res, next){
                 else{
                     // Creat Session
                     req.session.views = 1;
-                    req.session.username = req.body.username ;
+                    req.session.username = req.body.username;
+                    req.session.email = rows[0].email;
+                    req.session.password = req.body.password;
+                    req.session.ide = rows[0].id;
+
                     req.flash('session', "connected")
                     res.redirect('/home')
 
