@@ -19,6 +19,9 @@ NodeJS CRUD app with MySQL, Express, and EJS.
         a-  Menu : Server --> Users And Priveleges 
         b-  Click on button : Add account --> window display : Details for account newuser where you add login and password --> Click Apply
         c-  Click on Administratifs Roles --> Select DBA --> Click Apply
+
+        d-  Click on Shema Priveleges --> Add Entry --> Selected Shema (and choose shema created) --> Click Apply
+        
         d-  Click on SHema Priveleges --> Add Entry --> Selected Shema (and choose shema created) --> Click Apply
 
 #### 6. Edit database information at "*config.js*"  and change this information by the login and password user create and name shema : 
