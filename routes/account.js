@@ -1,7 +1,5 @@
 var express = require('express')
 var config = require('../config')
-
-//Node.js can use this module to manipulate the MySQL database
 var mysql = require('mysql')
 var app = express()
 var dbOptions = {
@@ -22,7 +20,7 @@ app.get('/', function(req, res){
             password: req.session.password,
             id: req.session.id,
         }
-    res.render('workout/account',
+    res.render('workout/account', 
     {
         title: 'account page',
         data : account
@@ -31,7 +29,7 @@ app.get('/', function(req, res){
     )
     }
     else{
-        req.flash('error', 'you dont Have persmission')
+        req.flash('error', 'you dont Have persmission') 
         res.redirect('/')
     }
 })
@@ -50,14 +48,14 @@ app.post('/email', function(req, res){
                     res.redirect('/account')
                 } else {
                     req.session.email = account.email;
-                    res.render('workout/account',
+                    res.render('workout/account', 
                     {
                         title: 'account page',
                         data : account
                     })
                 }
             })
-        })
+        })  
 }
 })
 app.post('/password', function(req, res){
@@ -69,9 +67,9 @@ app.post('/password', function(req, res){
             id: req.session.id,
         }
         if(req.body.oldpassword != req.session.password)
-        {
-            req.flash('error', 'the old password not correct')
-            res.render('workout/account',
+        {   
+            req.flash('error', 'the old password not correct') 
+            res.render('workout/account', 
             {
                 title: 'account page',
                 data : account
@@ -86,14 +84,14 @@ app.post('/password', function(req, res){
                     res.redirect('/account')
                 } else {
                     req.session.email = account.email;
-                    res.render('workout/account',
+                    res.render('workout/account', 
                     {
                         title: 'account page',
                         data : account
                     })
                 }
             })
-        })
+        })  
 }}
 })
 
