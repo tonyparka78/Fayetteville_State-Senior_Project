@@ -7,7 +7,9 @@ var config = {
         db: 'app'              // Database name
     },
     server: {
+        port: '3000'
         host: 'localhost',
+        }
 
 /* The module.exports or exports is a special object which is included in
 every JS file in the Node.js application by default. module is a variable
